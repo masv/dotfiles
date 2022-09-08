@@ -1,0 +1,18 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Martin Svangren
+	email = martin@masv.net
+
+[alias]
+	st = status
+	ci = commit
+	b  = branch
+	co = checkout
+	cob = checkout -b
+	cot = checkout -t
+	d = diff
+	dt = difftool
+	first = commit --allow-empty -m 'Initial commit'
+	please = push --force-with-lease
+[init]
+	defaultBranch = main
