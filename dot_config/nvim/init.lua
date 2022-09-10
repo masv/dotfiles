@@ -33,7 +33,6 @@ require('packer').startup(function(use)
   -- General stuff
   use 'christoomey/vim-tmux-navigator' -- Navigate seamlessly between vim and tmux splits
   use 'folke/tokyonight.nvim' -- Tokyo Night theme
-  use 'ludovicchabant/vim-gutentags' -- Automatic tags management
   use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher
   use 'tpope/vim-projectionist' -- Granular project configuration
   use 'tpope/vim-repeat' -- Enable repeating plugin maps (like surround) with "."
@@ -201,7 +200,6 @@ vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
-vim.keymap.set('n', '<leader>st', require('telescope.builtin').tags, { desc = '[S]search [T]ags' })
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
