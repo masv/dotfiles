@@ -9,6 +9,7 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
+op completion fish | source
 
 # TokyoNight Color Palette
 set -l foreground c0caf5
