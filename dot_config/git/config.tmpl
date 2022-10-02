@@ -2,6 +2,7 @@
 [user]
 	name = Martin Svangren
 	email = {{ .email | quote }}
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAznjxzQT1UZeVmqNN/PCI/qqEe9HI5SvLc3H7bNjaId
 
 [alias]
 	st = status
@@ -14,5 +15,15 @@
 	dt = difftool
 	first = commit --allow-empty -m 'Initial commit'
 	please = push --force-with-lease
+
 [init]
 	defaultBranch = main
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+	gpgsign = true
