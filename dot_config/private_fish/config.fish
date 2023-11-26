@@ -5,6 +5,7 @@ if status is-interactive
     alias cz="chezmoi"
 end
 
+fish_add_path ~/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 
