@@ -16,6 +16,9 @@
 	first = commit --allow-empty -m 'Initial commit'
 	please = push --force-with-lease
 
+[core]
+	attributesfile = ~/.config/git/attributes
+
 [init]
 	defaultBranch = main
 
@@ -27,3 +30,7 @@
 
 [commit]
 	gpgsign = true
+
+[merge "merge-structure-sql"]
+	name = Rails structure.sql merge driver
+	driver = git-merge-structure-sql %A %O %B
