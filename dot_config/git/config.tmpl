@@ -17,6 +17,7 @@
 	dt = difftool
 	first = commit --allow-empty -m 'Initial commit'
 	please = push --force-with-lease
+	fu = !git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -wf 1 | xargs -o git commit --fixup
 
 [core]
 	attributesfile = ~/.config/git/attributes
