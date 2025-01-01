@@ -15,8 +15,8 @@
 
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé"
+    "light": "Catppuccin Frappé",
+    "dark": "Catppuccin Macchiato"
   },
 
   "languages": {
