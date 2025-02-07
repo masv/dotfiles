@@ -6,11 +6,12 @@ if status is-interactive
 end
 
 fish_add_path ~/bin
+fish_add_path ~/.asdf/shims
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 fish_add_path /opt/homebrew/opt/postgresql@12/bin
 
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+asdf completion fish | source
 op completion fish | source
 
 set -gx EDITOR nvim
