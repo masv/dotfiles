@@ -14,5 +14,8 @@ fish_add_path /opt/homebrew/opt/postgresql@12/bin
 asdf completion fish | source
 op completion fish | source
 
+alias l="eza -l --icons --git -a"
+alias lt="l -T -L2"
+
 set -gx EDITOR nvim
 set -x OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
