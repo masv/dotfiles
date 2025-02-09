@@ -9,6 +9,7 @@ brew "lazygit"
 brew "neovim"
 brew "ripgrep"
 brew "tmux"
+brew "zoxide"
 
 cask "1password-cli"
 cask "firefox"
