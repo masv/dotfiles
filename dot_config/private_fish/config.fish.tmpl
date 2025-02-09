@@ -21,3 +21,10 @@ zoxide init fish | source
 alias cz="chezmoi"
 alias l="eza -l --icons --git -a"
 alias lt="l -T -L2"
+
+{{- if hasKey . "teamtailor" }}
+
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx VOLTA_FEATURE_PNPM 1
+fish_add_path $VOLTA_HOME/bin
+{{- end }}
