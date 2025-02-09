@@ -3,6 +3,12 @@ if status is-interactive
     set -g fish_greeting
 end
 
+set -gx EDITOR nvim
+set -x OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
+set -x DISABLE_SPRING true
+
+ulimit -n 10000
+
 fish_add_path ~/bin
 fish_add_path ~/.asdf/shims
 fish_add_path /opt/homebrew/bin
@@ -15,6 +21,3 @@ zoxide init fish | source
 alias cz="chezmoi"
 alias l="eza -l --icons --git -a"
 alias lt="l -T -L2"
-
-set -gx EDITOR nvim
-set -x OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
