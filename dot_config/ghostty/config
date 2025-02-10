@@ -1,5 +1,3 @@
 font-family = JetBrainsMono Nerd Font Mono
 font-size = 16
 theme = catppuccin-macchiato
-
-macos-option-as-alt = true
