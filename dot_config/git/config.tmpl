@@ -15,12 +15,15 @@
 	cot = checkout -t
 	d = diff
 	dt = difftool
+	dw = diff --word-diff
 	first = commit --allow-empty -m 'Initial commit'
 	please = push --force-with-lease
 	fu = !git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -wf 1 | xargs -o git commit --fixup
 
 [core]
 	attributesfile = ~/.config/git/attributes
+	fsmonitor = true
+	untrackedCache = true
 
 [init]
 	defaultBranch = main
@@ -33,7 +36,33 @@
 
 [commit]
 	gpgsign = true
+	verbose = true
 
 [merge "merge-structure-sql"]
 	name = Rails structure.sql merge driver
 	driver = git-merge-structure-sql %A %O %B
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+[rerere]
+	enabled = true
+	autoupdate = true
+[merge]
+	conflictstyle = zdiff3
