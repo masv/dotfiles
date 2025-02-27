@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Martin Svangren
-	email = {{ .email | quote }}
+	email = martin@masv.net
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAznjxzQT1UZeVmqNN/PCI/qqEe9HI5SvLc3H7bNjaId
 
 [alias]
@@ -66,3 +66,6 @@
 	autoupdate = true
 [merge]
 	conflictstyle = zdiff3
+
+[includeIf "gitdir:~/src/teamtailor/"]
+	path = teamtailor
