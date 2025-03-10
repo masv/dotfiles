@@ -16,6 +16,7 @@ brew "wget"
 brew "zoxide"
 
 cask "1password-cli"
+cask "dash"
 cask "firefox"
 cask "font-inter"
 cask "font-jetbrains-mono-nerd-font"
