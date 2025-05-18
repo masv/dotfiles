@@ -9,3 +9,7 @@ window-padding-x = 8
 window-padding-balance = true
 
 window-inherit-working-directory = false
+
+# Quick terminal
+keybind = global:cmd+§=toggle_quick_terminal
+quick-terminal-position = center
