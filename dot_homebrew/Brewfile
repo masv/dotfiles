@@ -22,4 +22,8 @@ cask "font-inter"
 cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 cask "kitty"
+cask "linearmouse"
 cask "zed"
+
+tap "puma/puma"
+brew "puma/puma/puma-dev"
