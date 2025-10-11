@@ -27,3 +27,6 @@ cask "zed"
 
 tap "puma/puma"
 brew "puma/puma/puma-dev"
+
+tap "netbirdio/tap"
+cask "netbirdio/tap/netbird-ui"
