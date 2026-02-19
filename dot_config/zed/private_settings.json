@@ -7,6 +7,35 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            {
+              "pattern": "^ruby\\s"
+            },
+            {
+              "pattern": "^bundle\\s"
+            },
+            {
+              "pattern": "^grep\\s"
+            },
+            {
+              "pattern": "^sed\\s"
+            }
+          ]
+        }
+      }
+    },
+    "use_modifier_to_send": true,
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-opus-4-6"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "edit_predictions": {
     "mode": "subtle"
   },
